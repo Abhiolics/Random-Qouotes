@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: #f8f5f5;
+    color: #fff;
+
+}
+.quotebox {
+    background-color: #ED2112;
+    width: 700px ;
+    text-align: center;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 12px 22px 0px rgba(0, 0, 0, 0.15);
+    
+}
+.quotebox h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.quotebox  h2::after{
+    content: "";
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quotebox blockquote {
+    font-size: 28px;
+    min-height: 110px;
+}
+.quotebox blockquote::before, .quotebox blockquote::after{
+    content: "";
+}
+.quotebox span{
+    margin-top: 10px;
+    float: right;
+    display: block;
+    position: relative;
+}
+.quotebox span::before{
+    height:  2px;
+    background: white ;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    content: "";
+}
+.quotebox div {
+    width:  100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.quotebox button{
+    justify-content: center;
+    align-items: center;
+    font-weight: 700px;
+    cursor: pointer;
+    border-radius: 25px;
+    background: #30c1fb;
+    color: #fff;
+    border:  1px solid black;
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    transition: all ease0.5s;
+
+
+    
+}
+.quotebox button:hover{
+    text-shadow: 0 0 5px #db1f99,0 0 15px #db1f99,0 0 25px #db1f99,0 0 35px #db1f99;
+}
+.quotebox button img {
+    width: 15px;
+    margin-right: 10px;
+    justify-content: center;
+}
+.quotebox button:nth-last-child(1){
+    background: transparent;
+    color: #fff;
+}
+.madeby {
+    color: black;
+    background-color: #ED2112;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    font-weight: 500;
+    display: flex;
+    bottom: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
